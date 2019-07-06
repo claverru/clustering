@@ -49,4 +49,4 @@ def np_target_distribution(q):
 def target_distribution(q):
     """If inside keras scope"""
     weight = K.pow(q, 2) / K.sum(q, axis=0)
-    return weight / K.sum(weight, axis=1, keepdims=True
+    return weight / K.sum(weight, axis=1, keepdims=True)
